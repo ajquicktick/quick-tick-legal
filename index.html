@@ -40,7 +40,7 @@
 
 <p>Quick Tick is made by AjE. Contact: <a href="mailto:quicktick.help@gmail.com">quicktick.help@gmail.com</a></p>
 
-<p>This policy explains what Quick Tick ("the app," "we," "us") does with your information. In short: what you track stays on your phone. The app contacts Google's servers only to check a Quick Tick Pro subscription, to send a crash report if the app crashes, to send anonymous usage statistics if you agree, and, if you connect Google Drive, to back up to your own Drive.</p>
+<p>This policy explains what Quick Tick ("the app," "we," "us") does with your information. In short: what you track stays on your phone. The app contacts Google's servers only to check a Quick Tick Pro subscription or a tester code you enter, to send a crash report if the app crashes, to send anonymous usage statistics if you agree, and, if you connect Google Drive, to back up to your own Drive.</p>
 
 <h2>Your tracking data stays on your phone</h2>
 <p>Your categories, logs, notes, goals, limits, costs, streaks, milestones, countdowns and settings are stored only on your device. We don't have a server that receives them, and we can't see them. Quick Tick does not require an account or login.</p>
@@ -79,11 +79,14 @@
 </ul>
 <p>We store the purchase token, the anonymous sign-in ID and whether your subscription is active, only to keep Pro working correctly and to prevent fraud. This information is not linked to your tracking data, is not used for anything else, and is not sold or shared. As with any internet connection, Google Firebase sees your device's IP address when the app contacts our server. We don't use it to work out where you are.</p>
 
+<h2>Tester codes</h2>
+<p>If you were given a tester code, you can enter it in Settings ▸ Have a code? to try Quick Tick Pro for a limited time. The app sends the code to the same Firebase server, with the same anonymous sign-in and App Check as above. We store the code, the anonymous sign-in ID that used it, when it was used and when the trial Pro ends, only to give you that trial and to limit how many times a code can be used. This is not linked to your name, email, Google account or tracking data, and is not used for anything else.</p>
+
 <h2>Crash reports</h2>
 <p>If Quick Tick crashes, it sends a crash report to Google Firebase Crashlytics so we can fix the problem. A report contains technical details of the crash, your phone model, Android version, app version, free memory and storage, and a random installation ID. It does not contain your categories, logs, notes or costs. Crash reports are kept for 90 days.</p>
 
 <h2>Usage statistics (optional)</h2>
-<p>After you've used Quick Tick for a few days, it asks once whether you want to help improve the app. If you agree, it sends anonymous usage statistics to Google Analytics for Firebase: that the app was opened, that a category was created and its type (tracking, milestone or countdown), that a log was added and where from (app, widget, notification, tile or reminder), that the upgrade screen was shown and for which feature, that a purchase was started or completed, and that a Pro feature was used. Google also records general device details (phone model, Android version, app version, language and country) and when each event happened.</p>
+<p>After you've used Quick Tick for a few days, it asks once whether you want to help improve the app. If you agree, it sends anonymous usage statistics to Google Analytics for Firebase: that the app was opened, that a category was created and its type (tracking, milestone or countdown), that a log was added and where from (app, widget, notification, tile or reminder), that the upgrade screen was shown and for which feature, that a purchase was started or completed, that a tester code was used (not which code), and that a Pro feature was used. Google also records general device details (phone model, Android version, app version, language and country) and when each event happened.</p>
 <p>These statistics never include your category names, notes, costs or the times of your logs, and are not linked to your name, email or advertising ID. If you don't agree, or haven't answered yet, none of this is sent. You can change your choice any time in Settings ▸ Help improve Quick Tick.</p>
 
 <h2>App lock and reminders</h2>
@@ -99,10 +102,12 @@
 <p><strong>On your phone.</strong> Settings ▸ Erase all data deletes everything Quick Tick has stored on your device: your categories, logs, notes, reminders and settings. Uninstalling the app does the same. Backup and export files you saved elsewhere, including backups in your own Google Drive, are yours to delete; Settings ▸ Disconnect Google Drive can delete the Drive backups for you.</p>
 <p><strong>On our servers, on request.</strong> Email <a href="mailto:quicktick.help@gmail.com">quicktick.help@gmail.com</a> and include the Google Play order number from your purchase receipt (it starts with "GPA.") so we can find your record. We will then delete:</p>
 <ul>
-  <li>your purchase and subscription record (the purchase token, product ID and whether Pro is active), and</li>
+  <li>your purchase and subscription record (the purchase token, product ID and whether Pro is active),</li>
+  <li>any tester-code records under the same sign-in ID, and</li>
   <li>the anonymous Firebase sign-in ID linked to it.</li>
 </ul>
 <p>We do this within 30 days and reply to confirm.</p>
+<p><strong>Tester codes without a purchase</strong> are linked only to a random sign-in ID, so we can't find yours from an email request. Instead, we delete all tester-code records within 90 days after the test period ends.</p>
 <p><strong>Crash reports and usage statistics</strong> are stored under a random app-installation ID, not under your name, email or purchase, so we can't pick out yours from an email request. They are deleted automatically instead:</p>
 <ul>
   <li>crash reports after 90 days (Firebase Crashlytics' retention), and</li>
